@@ -1,3 +1,9 @@
+"""
+encrypt and decipher messages with vignere cipher
+
+inspired by the movie Imitation Game, 2014 (no, this is not the Enigma cipher)
+"""
+
 import argparse
 
 alphabet = [
@@ -85,7 +91,7 @@ def main():
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="encrypt and decipher messages with vignere cipher",
+        description=__doc__,
         epilog="\x1b[3m“Sometimes it’s the people no one " +
         "imagines anything of who do the things " +
         "that no one can imagine.”\x1b[0m (Imitation Game, 2014)"

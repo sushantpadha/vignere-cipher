@@ -17,9 +17,28 @@ Follow the steps outlined in the [Installation](#installation) section.
 Use the script with the command
 
 ```bash
-python -m vignere_cipher
-# or
-python vignere_cipher
+python -m vignere_cipher [options]
+```
+
+### Command line usage
+
+```text
+usage: vignere_cipher [-h] -k KEY [-e | -d] text
+
+encrypt and decipher messages with vignere cipher
+
+inspired by the movie Imitation Game, 2014 (no, this is not the Enigma cipher)
+
+positional arguments:
+  text        text message to decrypt or encrypt (all non-alphabetic characters will be removed)
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -k KEY      key to use to en/decrypt text (all non-alphabetic characters will be removed)
+  -e          encrypt text using key
+  -d          decrypt text using key
+
+“Sometimes it’s the people no one imagines anything of who do the things that no one can imagine.” (Imitation Game, 2014)
 ```
 
 ## Developing
