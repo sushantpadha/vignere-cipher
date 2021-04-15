@@ -6,7 +6,7 @@ encrypt and decipher messages with vignere cipher
 Run the following command
 
 ```bash
-python -m pip install git+https://Sushant-Padha/vignere-cipher.git
+python -m pip install git+https://github.com/Sushant-Padha/vignere-cipher.git
 ```
 
 
