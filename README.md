@@ -69,7 +69,7 @@ Learn more about vignere cipher:
 
 ---
 
-† Project root is the folder named "tictactoe" at the top level, i.e., it is shallow
+† Project root is the folder named "vignere-cipher" at the top level, i.e., it is shalloww
 
-†† Source root is the folder named "tictactoe" inside another folder named "tictactoe", i.e., it is deep (nested)
+†† Source root is the folder named "vignere_cipher" inside another folder named "vignere-cipher", i.e., it is deep (nested)
 
