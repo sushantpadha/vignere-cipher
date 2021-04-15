@@ -98,7 +98,7 @@ Learn more about vignere cipher:
 - https://crypto.interactive-maths.com/vigenegravere-cipher.html
 - https://www.geeksforgeeks.org/vigenere-cipher/
 
-<style color="red">CAUTION:</style>
+:exclamation: CAUTION: :exclamation:
 This script should not be used for serious security or cryptographic purposes.
 It is only a fun project to use encrypted messages for basic demonstrations or amusement.
 
