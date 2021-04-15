@@ -41,6 +41,20 @@ optional arguments:
 “Sometimes it’s the people no one imagines anything of who do the things that no one can imagine.” (Imitation Game, 2014)
 ```
 
+### Examples
+
+1. To encrypt the text `attackatdawn` with the key `lemon`, use the following command
+
+  ```bash
+  python -m vignere_cipher "attackatdawn" -k "lemon" -e
+  ```
+
+2. To decrypt the text `lxfopvefrnhr` with the key `lemon`, use the following command
+
+  ```bash
+  python -m vignere_cipher "lxfopvefrnhr" -k "lemon" -d
+  ```
+
 ## Developing
 
 1. Download the source code.
