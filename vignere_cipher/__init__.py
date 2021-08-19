@@ -124,5 +124,4 @@ def parse_args(args=None):
 
 
 if __name__ == '__main__':
-    # CBV
-    main(['-k','ABC','-e','CAT'])
+    main()
