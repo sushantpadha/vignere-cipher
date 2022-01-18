@@ -1,7 +1,7 @@
 <img src="./icon.png" height=128></img>
 
 # vignere-cipher
-encrypt and decipher messages with vignere cipher
+Basic implementation of a Vigenere Cipher in Python.
 
 ## Installation
 
