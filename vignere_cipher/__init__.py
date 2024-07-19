@@ -1,7 +1,5 @@
 """
 encrypt and decipher messages with vignere cipher
-
-inspired by the movie Imitation Game, 2014 (no, this is not the Enigma cipher)
 """
 
 import argparse
@@ -125,3 +123,4 @@ def parse_args(args=None):
 
 if __name__ == '__main__':
     main()
+    print(1+1)

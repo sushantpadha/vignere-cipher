@@ -29,8 +29,6 @@ usage: vignere_cipher [-h] -k KEY [-e | -d] text
 
 encrypt and decipher messages with vignere cipher
 
-inspired by the movie Imitation Game, 2014 (no, this is not the Enigma cipher)
-
 positional arguments:
   text        text message to decrypt or encrypt (all non-alphabetic characters will be removed)
 
