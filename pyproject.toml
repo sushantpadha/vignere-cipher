@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "vignere_cipher"
+version = "0.1.0"
+description = "encrypt and decipher messages with vignere cipher"
+authors = ["sushant <sushant.padha@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.2.2"
+argparse = "^1.4.0"
+
+[tool.poetry.scripts]
+vignere_cipher = "vignere_cipher.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
