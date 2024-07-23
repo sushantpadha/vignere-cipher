@@ -1,5 +1,5 @@
 import pytest
-from vignere_cipher import alphabet, normalize, get_key, encrypt, decrypt
+from vignere_cipher import ALPHABET, normalize, get_key, encrypt, decrypt
 
 key = "godsavethequeen"
 key *= 5  # just to be safe
@@ -10,7 +10,7 @@ key *= 5  # just to be safe
     [('a', 0), ('p', 15), ('z', 25)]
 )
 def test_alphabet(letter, num):
-    assert alphabet.index(letter) == num
+    assert ALPHABET.index(letter) == num
 
 
 @pytest.mark.parametrize(
