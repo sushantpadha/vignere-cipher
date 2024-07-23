@@ -69,7 +69,7 @@ options:
 1. Download the source code.
 2. Open up a terminal.
 3. `cd` into the project root †.
-4. Install the project using steps outlined in [#Installation]
+4. Install the project using steps outlined in [Installation](#installation)
 
 ## Contributing
 
