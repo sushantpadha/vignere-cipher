@@ -86,7 +86,7 @@ def parse_args(args=None):
         description=__doc__,
         epilog="\x1b[3m“Sometimes it’s the people no one "
         + "imagines anything of who do the things "
-        + "that no one can imagine.”\x1b[0m (Alan Turing)",
+        + "that no one can imagine.”\x1b[0m",
     )
     parser.add_argument(
         "text",

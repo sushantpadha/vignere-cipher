@@ -5,83 +5,71 @@ Basic implementation of a Vigenere Cipher in Python.
 
 ## Installation
 
-Run the following command
+This project uses the [poetry](https://python-poetry.org/) build tool.
 
-```bash
-python -m pip install git+https://github.com/Sushant-Padha/vignere-cipher.git
-```
+First, `git clone` the project and `cd` into the project root folder
+
+Then, install the project with all dependencies in a virtual environment using `poetry install`
+
+Enter a new shell using `poetry shell` (optionally set environment variable `VIRTUAL_ENV_DISABLE_PROMPT=1` to disable the prompt prefix).
 
 
 ## Usage
 
 Follow the steps outlined in the [Installation](#installation) section.
 
-Use the script with the command
-
-```bash
-python -m vignere_cipher [options]
-```
+Run the script using `poetry run vignere_cipher` followed by command line arguments.
 
 ### Command line usage
 
 ```text
-usage: vignere_cipher [-h] -k KEY [-e | -d] text
+usage: vignere_cipher.cmd [-h] -k KEY [-e | -d] [--extended] text
 
 encrypt and decipher messages with vignere cipher
 
 positional arguments:
-  text        text message to decrypt or encrypt (all non-alphabetic characters will be removed)
+  text        text message to decrypt or encrypt standard mode: non-alphabetic characters and cases of alphabetic characters will be
+              preserved extended mode: all characters will be en/decrypted according to extended alphabet, non-ascii characters will be
+              preserved
 
-optional arguments:
+options:
   -h, --help  show this help message and exit
-  -k KEY      key to use to en/decrypt text (all non-alphabetic characters will be removed)
+  -k KEY      key to use to en/decrypt text case is preserved (if applicable) and non-alphabet characters are preserved
   -e          encrypt text using key
   -d          decrypt text using key
+  --extended  use extended alphabet consisting of all ascii characters from 33 to 126. prefer using raw strings
 
-“Sometimes it’s the people no one imagines anything of who do the things that no one can imagine.” (Imitation Game, 2014)
+“Sometimes it’s the people no one imagines anything of who do the things that no one can imagine.” (Alan Turing)
 ```
 
 ### Examples
 
-1. To encrypt the text `attackatdawn` with the key `lemon`, use the following command
+1. To encrypt the text `attackatdawn` with the key `lemon`:
 
   ```bash
-  python -m vignere_cipher "attackatdawn" -k "lemon" -e
+  $ poetry run vignere_cipher "attackatdawn" -k "lemon" -e
+  lxfopvefrnhr
   ```
 
-2. To decrypt the text `lxfopvefrnhr` with the key `lemon`, use the following command
+2. To decrypt the text `lxfopvefrnhr` with the key `lemon`:
 
   ```bash
-  python -m vignere_cipher "lxfopvefrnhr" -k "lemon" -d
+  $ poetry run vignere_cipher "lxfopvefrnhr" -k "lemon" -d
+  attackatdawn
   ```
+
+3. To encrypt the text `godsavethequeen` with the key `pickle`, using the extended alphabet (ASCII chars 33-126):
+   ```bash
+   $ poetry run vignere_cipher "godsavethequeen" -k "pickle" -e --extended
+   XYH_N\V^LQ^[VOR
+   ```
 
 ## Developing
 
 1. Download the source code.
 2. Open up a terminal.
-3. `cd` into the project root†.
-4. Run the command (mind the period at the end of the command)
-   ```bash
-   python -m pip install -e .
-   ```
-
-To develop you will need to install [Python3](https://python.org) for your specific OS and architecture
-
-Other than that, you will also need some dependencies.
-
-They can be installed from the `requirements.txt` file provided in the source.
-
-Just run
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-To run tests, simply `cd` into the source root†† and execute the following command
-
-```bash
-python -m pytest .
-```
+3. `cd` into the project root †.
+4. Install the project using steps outlined in [#Installation]
 
 ## Contributing
 
