@@ -2,7 +2,7 @@
 name = "vignere_cipher"
 version = "0.1.0"
 description = "encrypt and decipher messages with vignere cipher"
-authors = ["sushant <sushant.padha@gmail.com>"]
+authors = ["sushantpadha <24b1057@iitb.ac.in>"]
 license = "MIT License"
 readme = "README.md"
 
